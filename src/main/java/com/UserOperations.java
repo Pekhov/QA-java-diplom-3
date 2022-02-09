@@ -22,11 +22,11 @@ public class UserOperations {
 
         // с помощью библиотеки RandomStringUtils генерируем имэйл
         // метод randomAlphabetic генерирует строку, состоящую только из букв, в качестве параметра передаём длину строки
-        String email = RandomStringUtils.randomAlphabetic(10) + EMAIL_POSTFIX;
+        String email = RandomStringUtils.randomAlphabetic(20) + EMAIL_POSTFIX;
         // с помощью библиотеки RandomStringUtils генерируем пароль
-        String password = RandomStringUtils.randomAlphabetic(10);
+        String password = RandomStringUtils.randomAlphabetic(15);
         // с помощью библиотеки RandomStringUtils генерируем имя пользователя
-        String name = RandomStringUtils.randomAlphabetic(10);
+        String name = RandomStringUtils.randomAlphabetic(15);
 
         // создаём и заполняем мапу для передачи трех параметров в тело запроса
         Map<String, String> inputDataMap = new HashMap<>();

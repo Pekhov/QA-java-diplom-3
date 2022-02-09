@@ -6,6 +6,16 @@ public class User {
     private String password;
     private String name;
 
+    private Boolean isRegistered = false;
+
+    public Boolean isRegistered() {
+        return isRegistered;
+    }
+
+    public void setRegistered(Boolean registered) {
+        isRegistered = registered;
+    }
+
     public String getEmail() {
         return email;
     }
